@@ -35,9 +35,9 @@ const TeamDetail = () => {
                     </div>
                     <div className="col-md-6">
                         {
-                            team.strGender === 'Male' ? <img alt="Male Image"
+                            team.strGender === 'Male' ? <img alt="Male"
                             className="img-fluid p-3"
-                            src={maleImg}/> : <img alt="Fimale Image"
+                            src={maleImg}/> : <img alt="Fimale"
                             src={femaleImg}/>
                         }
                     </div>
