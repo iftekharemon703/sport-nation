@@ -15,7 +15,7 @@ const TeamDetail = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setTeam(data.teams[0]))
-    }, [])
+    }, [idTeam])
     return (
         <div>
             <div style={{ backgroundImage: `url(${team.strTeamBanner})`}}>
@@ -35,9 +35,9 @@ const TeamDetail = () => {
                     </div>
                     <div className="col-md-6">
                         {
-                            team.strGender === 'Male' ? <img 
+                            team.strGender === 'Male' ? <img alt="Male Image"
                             className="img-fluid p-3"
-                            src={maleImg}/> : <img
+                            src={maleImg}/> : <img alt="Fimale Image"
                             src={femaleImg}/>
                         }
                     </div>
